@@ -2,7 +2,7 @@
   "name": "pavankommi.github.io",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
-  "homepage": "http://pavankommi.github.io",
+  "homepage": "http://pavankommi.github.io/",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
