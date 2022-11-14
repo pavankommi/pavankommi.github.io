@@ -2,8 +2,8 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "lang": "en",
-  "name": "pavankommi.github.io",
-  "short_name": "pavankommi.github.io",
+  "name": "pavankommi",
+  "short_name": "pavankommi",
   "start_url": "/?utm_source=web_app_manifest",
   "orientation": "portrait",
   "icons": [
