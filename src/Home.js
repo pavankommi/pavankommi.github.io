@@ -9,6 +9,8 @@ export default function Home() {
         Montserrat: require('../assets/Montserrat-Bold.otf'),
     });
 
+    const secondaryTextColor = "#808080"
+
     const playstoreUrl = "https://play.google.com/store/apps/developer?id=fortyoneapostrophes"
     const githubUrl = "https://github.com/pavankommi"
     const mailUrl = 'mailto:pavankommi0503@gmail.com'
@@ -44,20 +46,20 @@ export default function Home() {
 
                 <View style={{ paddingBottom: 10 }}>
                     <Text style={styles.textStyle}>Software Engineer</Text >
-                    <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
-                        <Text style={[styles.textStyle, { color: "#808080" }]}>Alpha Clinical Systems</Text >
-                        <Text style={[styles.textStyle, { color: "#808080" }]}>6/21 - 6/22</Text >
+                    <View style={styles.rowContainer}>
+                        <Text style={[styles.textStyle, { color: secondaryTextColor }]}>Alpha Clinical Systems</Text >
+                        <Text style={[styles.textStyle, { color: secondaryTextColor }]}>6/21 - 6/22</Text >
                     </View>
-                    <Text style={[styles.textStyle, { color: "#808080" }]}>Developed and enhanced modern software applications, the majority of which are utilised in clinical trials, using React Js and React Native.</Text >
+                    <Text style={[styles.textStyle, { color: secondaryTextColor }]}>Developed and enhanced modern software applications, the majority of which are utilised in clinical trials, using React Js and React Native.</Text >
                 </View>
 
                 <View >
                     <Text style={styles.textStyle}>Mobile App Developer Trainee</Text >
-                    <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
-                        <Text style={[styles.textStyle, { color: "#808080" }]}>3Edge Solutions</Text >
-                        <Text style={[styles.textStyle, { color: "#808080" }]}>2/21 - 5/21</Text >
+                    <View style={styles.rowContainer}>
+                        <Text style={[styles.textStyle, { color: secondaryTextColor }]}>3Edge Solutions</Text >
+                        <Text style={[styles.textStyle, { color: secondaryTextColor }]}>2/21 - 5/21</Text >
                     </View>
-                    <Text style={[styles.textStyle, { color: "#808080" }]}>Open Recruiter, an existing web application, was converted into a mobile application with additional functionalities using React Native.</Text >
+                    <Text style={[styles.textStyle, { color: secondaryTextColor }]}>Open Recruiter, an existing web application, was converted into a mobile application with additional functionalities using React Native.</Text >
                 </View>
 
             </View>
@@ -67,78 +69,78 @@ export default function Home() {
                 <Text style={styles.subHeader}>Projects</Text >
 
                 <View style={{ paddingBottom: 10 }}>
-                    <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+                    <View style={styles.rowContainer}>
                         <Text style={styles.textStyle}>Note Down.</Text >
                         <View style={{ display: "flex", flexDirection: "row" }}>
-                            <TouchableOpacity style={{ backgroundColor: "#43464b", borderRadius: 3, paddingHorizontal: 5 }} onPress={() => Linking.openURL('https://github.com/pavankommi/note_down')}>
-                                <Text style={[styles.textStyle, { color: "#808080" }]}>source</Text >
+                            <TouchableOpacity style={styles.sourceButton} onPress={() => Linking.openURL('https://github.com/pavankommi/note_down')}>
+                                <Text style={[styles.textStyle, { color: secondaryTextColor }]}>source</Text >
                             </TouchableOpacity>
-                            <TouchableOpacity style={{ backgroundColor: "#43464b", borderRadius: 3, paddingHorizontal: 5, marginLeft: 5 }} onPress={() => Linking.openURL('https://play.google.com/store/apps/developer?id=fortyoneapostrophes')}>
-                                <Text style={[styles.textStyle, { color: "#808080" }]}>live</Text >
+                            <TouchableOpacity style={styles.liveButton} onPress={() => Linking.openURL('https://play.google.com/store/apps/developer?id=fortyoneapostrophes')}>
+                                <Text style={[styles.textStyle, { color: secondaryTextColor }]}>live</Text >
                             </TouchableOpacity>
                         </View>
                     </View>
-                    <Text style={[styles.textStyle, { color: "#808080" }]}>An android application that performs user authentication and CRUD operations with Firebase.</Text >
+                    <Text style={[styles.textStyle, { color: secondaryTextColor }]}>An android application that performs user authentication and CRUD operations with Firebase.</Text >
                 </View>
 
                 <View style={{ paddingBottom: 10 }}>
-                    <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+                    <View style={styles.rowContainer}>
                         <Text style={styles.textStyle}>expo-filedownload</Text >
                         <View style={{ display: "flex", flexDirection: "row" }}>
-                            <TouchableOpacity style={{ backgroundColor: "#43464b", borderRadius: 3, paddingHorizontal: 5 }} onPress={() => Linking.openURL('https://github.com/pavankommi/expo-filedownload')}>
-                                <Text style={[styles.textStyle, { color: "#808080" }]}>source</Text >
+                            <TouchableOpacity style={styles.sourceButton} onPress={() => Linking.openURL('https://github.com/pavankommi/expo-filedownload')}>
+                                <Text style={[styles.textStyle, { color: secondaryTextColor }]}>source</Text >
                             </TouchableOpacity>
-                            <TouchableOpacity style={{ backgroundColor: "#43464b", borderRadius: 3, paddingHorizontal: 5, marginLeft: 5 }} onPress={() => Linking.openURL('https://www.npmjs.com/package/expo-filedownload')}>
-                                <Text style={[styles.textStyle, { color: "#808080" }]}>live</Text >
+                            <TouchableOpacity style={styles.liveButton} onPress={() => Linking.openURL('https://www.npmjs.com/package/expo-filedownload')}>
+                                <Text style={[styles.textStyle, { color: secondaryTextColor }]}>live</Text >
                             </TouchableOpacity>
                         </View>
                     </View>
-                    <Text style={[styles.textStyle, { color: "#808080" }]}>An Expo React Native package that makes it easy to download and save files to your mobile device's local storage. Currently supported formats include png, jpg, pdf, mp3, mp4, and more.</Text >
+                    <Text style={[styles.textStyle, { color: secondaryTextColor }]}>An Expo React Native package that makes it easy to download and save files to your mobile device's local storage. Currently supported formats include png, jpg, pdf, mp3, mp4, and more.</Text >
                 </View>
 
                 <View style={{ paddingBottom: 10 }}>
-                    <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+                    <View style={styles.rowContainer}>
                         <Text style={styles.textStyle}>99* Cricket Scorer</Text >
                         <View style={{ display: "flex", flexDirection: "row" }}>
-                            <TouchableOpacity style={{ backgroundColor: "#43464b", borderRadius: 3, paddingHorizontal: 5 }} onPress={() => Linking.openURL('https://github.com/pavankommi/99_notout_cricket_scorer')}>
-                                <Text style={[styles.textStyle, { color: "#808080" }]}>source</Text >
+                            <TouchableOpacity style={styles.sourceButton} onPress={() => Linking.openURL('https://github.com/pavankommi/99_notout_cricket_scorer')}>
+                                <Text style={[styles.textStyle, { color: secondaryTextColor }]}>source</Text >
                             </TouchableOpacity>
-                            <TouchableOpacity style={{ backgroundColor: "#43464b", borderRadius: 3, paddingHorizontal: 5, marginLeft: 5 }} onPress={() => Linking.openURL('https://play.google.com/store/apps/details?id=com.fourone.ninetyninenotout')}>
-                                <Text style={[styles.textStyle, { color: "#808080" }]}>live</Text >
+                            <TouchableOpacity style={styles.liveButton} onPress={() => Linking.openURL('https://play.google.com/store/apps/details?id=com.fourone.ninetyninenotout')}>
+                                <Text style={[styles.textStyle, { color: secondaryTextColor }]}>live</Text >
                             </TouchableOpacity>
                         </View>
                     </View>
-                    <Text style={[styles.textStyle, { color: "#808080" }]}>A score keeper for street cricket, where the number of overs and wickets varies from match to match, and where it is optional to add runs for wides and no-balls.</Text >
+                    <Text style={[styles.textStyle, { color: secondaryTextColor }]}>A score keeper for street cricket, where the number of overs and wickets varies from match to match, and where it is optional to add runs for wides and no-balls.</Text >
                 </View>
 
                 <View style={{ paddingBottom: 10 }}>
-                    <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+                    <View style={styles.rowContainer}>
                         <Text style={styles.textStyle}>WhatsApp direct</Text >
                         <View style={{ display: "flex", flexDirection: "row" }}>
-                            <TouchableOpacity style={{ backgroundColor: "#43464b", borderRadius: 3, paddingHorizontal: 5 }} onPress={() => Linking.openURL('https://github.com/pavankommi/whatsappdirect')}>
-                                <Text style={[styles.textStyle, { color: "#808080" }]}>source</Text >
+                            <TouchableOpacity style={styles.sourceButton} onPress={() => Linking.openURL('https://github.com/pavankommi/whatsappdirect')}>
+                                <Text style={[styles.textStyle, { color: secondaryTextColor }]}>source</Text >
                             </TouchableOpacity>
-                            <TouchableOpacity style={{ backgroundColor: "#43464b", borderRadius: 3, paddingHorizontal: 5, marginLeft: 5 }} onPress={() => Linking.openURL('https://play.google.com/store/apps/details?id=com.fourone.whatsappdirect')}>
-                                <Text style={[styles.textStyle, { color: "#808080" }]}>live</Text >
+                            <TouchableOpacity style={styles.liveButton} onPress={() => Linking.openURL('https://play.google.com/store/apps/details?id=com.fourone.whatsappdirect')}>
+                                <Text style={[styles.textStyle, { color: secondaryTextColor }]}>live</Text >
                             </TouchableOpacity>
                         </View>
                     </View>
-                    <Text style={[styles.textStyle, { color: "#808080" }]}>An android application to send a WhatsApp message to ones that are not on your contact list.</Text >
+                    <Text style={[styles.textStyle, { color: secondaryTextColor }]}>An android application to send a WhatsApp message to ones that are not on your contact list.</Text >
                 </View>
 
                 <View >
-                    <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+                    <View style={styles.rowContainer}>
                         <Text style={styles.textStyle}>pavankommi.github.io</Text >
                         <View style={{ display: "flex", flexDirection: "row" }}>
-                            <TouchableOpacity style={{ backgroundColor: "#43464b", borderRadius: 3, paddingHorizontal: 5 }}>
-                                <Text style={[styles.textStyle, { color: "#808080" }]}>source</Text >
+                            <TouchableOpacity style={styles.sourceButton}>
+                                <Text style={[styles.textStyle, { color: secondaryTextColor }]}>source</Text >
                             </TouchableOpacity>
-                            <TouchableOpacity style={{ backgroundColor: "#43464b", borderRadius: 3, paddingHorizontal: 5, marginLeft: 5 }}>
-                                <Text style={[styles.textStyle, { color: "#808080" }]}>live</Text >
+                            <TouchableOpacity style={styles.liveButton}>
+                                <Text style={[styles.textStyle, { color: secondaryTextColor }]}>live</Text >
                             </TouchableOpacity>
                         </View>
                     </View>
-                    <Text style={[styles.textStyle, { color: "#808080" }]}>The webpage you're on right now.</Text >
+                    <Text style={[styles.textStyle, { color: secondaryTextColor }]}>The webpage you're on right now.</Text >
                 </View>
 
             </View>
@@ -179,5 +181,21 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         width: "200px",
         justifyContent: "space-between"
+    },
+    rowContainer: {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between"
+    },
+    sourceButton: {
+        backgroundColor: "#43464b",
+        borderRadius: 3,
+        paddingHorizontal: 5
+    },
+    liveButton: {
+        backgroundColor: "#43464b",
+        borderRadius: 3,
+        paddingHorizontal: 5,
+        marginLeft: 5
     }
 });
