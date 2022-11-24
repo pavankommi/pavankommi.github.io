@@ -33,7 +33,7 @@ export default function Home() {
             <View style={styles.subContainer}>
                 <Text style={styles.subHeader}>Experience</Text >
 
-                <View style={{ paddingBottom: "1%" }}>
+                <View style={{ paddingBottom: 10  }}>
                     <Text style={styles.textStyle}>Software Engineer</Text >
                     <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
                         <Text style={[styles.textStyle, { color: "#808080" }]}>Alpha Clinical Systems</Text >
@@ -57,7 +57,7 @@ export default function Home() {
             <View style={styles.subContainer}>
                 <Text style={styles.subHeader}>Projects</Text >
 
-                <View style={{ paddingBottom: "1%" }}>
+                <View style={{ paddingBottom: 10 }}>
                     <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
                         <Text style={styles.textStyle}>Note Down.</Text >
                         <View style={{ display: "flex", flexDirection: "row" }}>
@@ -72,7 +72,7 @@ export default function Home() {
                     <Text style={[styles.textStyle, { color: "#808080" }]}>An android application that performs user authentication and CRUD operations with Firebase.</Text >
                 </View>
 
-                <View style={{ paddingBottom: "1%" }}>
+                <View style={{ paddingBottom: 10 }}>
                     <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
                         <Text style={styles.textStyle}>expo-filedownload</Text >
                         <View style={{ display: "flex", flexDirection: "row" }}>
@@ -87,7 +87,7 @@ export default function Home() {
                     <Text style={[styles.textStyle, { color: "#808080" }]}>An Expo React Native package that makes it easy to download and save files to your mobile device's local storage. Currently supported formats include png, jpg, pdf, mp3, mp4, and more.</Text >
                 </View>
 
-                <View style={{ paddingBottom: "1%" }}>
+                <View style={{ paddingBottom: 10 }}>
                     <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
                         <Text style={styles.textStyle}>99* Cricket Scorer</Text >
                         <View style={{ display: "flex", flexDirection: "row" }}>
@@ -102,7 +102,7 @@ export default function Home() {
                     <Text style={[styles.textStyle, { color: "#808080" }]}>A score keeper for street cricket, where the number of overs and wickets varies from match to match, and where it is optional to add runs for wides and no-balls.</Text >
                 </View>
 
-                <View style={{ paddingBottom: "1%" }}>
+                <View style={{ paddingBottom: 10 }}>
                     <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
                         <Text style={styles.textStyle}>WhatsApp direct</Text >
                         <View style={{ display: "flex", flexDirection: "row" }}>
@@ -149,11 +149,13 @@ export default function Home() {
 
 const styles = StyleSheet.create({
     container: {
-        paddingHorizontal: "10%",
-        paddingVertical: "5%"
+        paddingHorizontal:"10%",
+        paddingVertical: 20,
+        height:"100%",
+        flex:1
     },
     subContainer: {
-        paddingVertical: "1%"
+        paddingVertical: 10
     },
     textStyle: {
         fontFamily: 'Montserrat',
@@ -162,19 +164,19 @@ const styles = StyleSheet.create({
     },
     mainHeader: {
         fontFamily: 'Montserrat',
-        fontSize: 38,
+        fontSize: 35,
         color: "#ffffff",
-        paddingVertical: "1%"
+        // paddingVertical: 10
     },
     subHeader: {
         fontFamily: 'Montserrat',
         fontSize: 24,
         color: "#ffffff",
-        paddingVertical: "1%"
+        paddingVertical: 10
     },
     iconContainer: {
         flexDirection: "row",
-        paddingVertical: "1%",
+        paddingVertical: 10,
         width: "205px",
         justifyContent: "space-between"
     }
