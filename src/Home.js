@@ -29,11 +29,20 @@ export default function Home() {
                 <Text style={styles.textStyle}>My goal is to build beautiful web experiences with passionate people. If you wish to reach out, find me online.</Text >
             </View>
 
+            {/* icons */}
+            <View style={styles.iconContainer}>
+                <Ionicons onPress={() => Linking.openURL(playstoreUrl)} name="logo-google-playstore" size={24} color="white" />
+                <AntDesign onPress={() => Linking.openURL(githubUrl)} name="github" size={24} color="white" />
+                <Entypo onPress={() => Linking.openURL(mailUrl)} name="mail" size={26} color="white" />
+                <Entypo onPress={() => Linking.openURL(instagramUrl)} name="instagram" size={24} color="white" />
+                <AntDesign onPress={() => Linking.openURL(linkedinUrl)} name="linkedin-square" size={24} color="white" />
+            </View>
+
             {/* experience */}
             <View style={styles.subContainer}>
                 <Text style={styles.subHeader}>Experience</Text >
 
-                <View style={{ paddingBottom: 10  }}>
+                <View style={{ paddingBottom: 10 }}>
                     <Text style={styles.textStyle}>Software Engineer</Text >
                     <View style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
                         <Text style={[styles.textStyle, { color: "#808080" }]}>Alpha Clinical Systems</Text >
@@ -134,25 +143,16 @@ export default function Home() {
 
             </View>
 
-            {/* icons */}
-            <View style={styles.iconContainer}>
-                <Ionicons onPress={() => Linking.openURL(playstoreUrl)} name="logo-google-playstore" size={24} color="white" />
-                <AntDesign onPress={() => Linking.openURL(githubUrl)} name="github" size={24} color="white" />
-                <Entypo onPress={() => Linking.openURL(mailUrl)} name="mail" size={26} color="white" />
-                <Entypo onPress={() => Linking.openURL(instagramUrl)} name="instagram" size={24} color="white" />
-                <AntDesign onPress={() => Linking.openURL(linkedinUrl)} name="linkedin-square" size={24} color="white" />
-            </View>
-
         </ScrollView>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
-        paddingHorizontal:"10%",
-        paddingVertical: 20,
-        height:"100%",
-        flex:1
+        paddingHorizontal: "10%",
+        paddingVertical: 50,
+        height: "100%",
+        flex: 1
     },
     subContainer: {
         paddingVertical: 10
@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
     iconContainer: {
         flexDirection: "row",
         paddingVertical: 10,
-        width: "205px",
+        width: "200px",
         justifyContent: "space-between"
     }
 });
