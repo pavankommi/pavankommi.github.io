@@ -115,7 +115,7 @@ export default function Home() {
 
                 <View style={{ paddingBottom: 10 }}>
                     <View style={styles.rowContainer}>
-                        <Text style={styles.textStyle}>WhatsApp direct</Text >
+                        <Text style={styles.textStyle}>WhatsApp Direct</Text >
                         <View style={{ display: "flex", flexDirection: "row" }}>
                             <TouchableOpacity style={styles.sourceButton} onPress={() => Linking.openURL('https://github.com/pavankommi/whatsappdirect')}>
                                 <Text style={[styles.textStyle, { color: secondaryTextColor }]}>source</Text >
